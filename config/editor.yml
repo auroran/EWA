@@ -1,0 +1,37 @@
+# Site which use the editor
+SiteUser = FormenteraChill
+
+# SaveMode : html | body | inBody
+SaveMode : inBody
+
+# Gestion de Bootstrap
+BootstrapEnable : false
+
+# URL of edited site/page
+dataURL : http://domaineDuSite/
+
+# URL of data folders (for JS in-live actions)
+dataURL : http://domaineDuSite/datas/
+
+# URL of pictures folders (for JS in-live actions)
+picturesURL : http://domaineDuSite/datas/pictures/
+
+# directory of data folders (from the folder 'ewab/')
+dataFolder : data/
+
+# directory of uploaded pictures (from the folder 'ewab/')
+picturesFolder : data/pictures/
+
+# Link settings
+linkTranslation : No
+linkFormat : 
+	HTML: "?page="
+	PHP : "?page="
+	JPG : "?img=.EXT"
+	PNG : "?img=.EXT"
+	JPEG: "?img=.EXT"
+	GIF : "?img=.EXT"
+linkDefault : HTML
+
+#<hN> tags, N start:
+titleTagStart: h2

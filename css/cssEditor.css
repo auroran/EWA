@@ -1,0 +1,251 @@
+/* editeur css */
+#cssEditor{
+	height:100%; 
+	overflow: visible;
+	overflow-y: auto;
+	padding: 0 10px;
+	font-family: 'sertig';
+}
+#cssEditor>pre{
+	padding: 0.3em 2em;
+	text-align: center;
+}
+	#cssEditor button[data-action=parent]{
+		position: absolute;
+		float: left;
+		top: -.25em;
+		font-size: 0.8em;
+		display: none;
+		font-size:1.12em; 
+	}
+	#cssEditor button[data-action=parent]:hover::after,
+	#cssEditor button[data-action=remove]:hover::after,
+	#cssEditor button[data-action=unwrap]:hover::after{
+		content: attr(data-title);
+		position:absolute;
+		left:0;
+		top : 2.8em;
+		background-color: rgba(220,220,250,0.9);
+		border : 1px solid #999999;
+		padding: 0.6em;
+		z-index: 5000;
+		border-radius: 3px
+	}
+	#cssEditor button[data-action=unwrap]{
+		position: absolute;
+		float: right;
+		top: 0;
+		right: 40px;
+		font-size: 0.8em;
+		display: none
+	}
+	#cssEditor button[data-action=remove]{
+		position: absolute;
+		right: 10px;
+		float: right;
+		top: 0;
+		font-size: 0.8em;
+		display: none;
+	}
+	#cssEditor strong{
+		padding: 0.5em 1em;
+		color : #222222;
+		background-color: #eeeeee;
+		box-shadow: 0 0 4px #555555;
+		border-color : #666666;
+		text-align: center;
+	}
+	
+	#cssEditor strong.tab{
+		margin-bottom: 2em;
+	}
+    #cssEditor strong span{
+     	display: inline-block;
+		width: 100%;
+     	border-bottom: 1px solid #aaaaaa;
+    }
+    .cssEditorUIButton{
+     	color : #555555;
+     	border-radius :0;
+		padding:  0 .4em;
+     	font-size: 0.8em;
+    }
+    .cssEditorUIButton.selected{
+     	background-color : rgba(255,255,255,0.5) !important;
+     	border: 1px solid #dddddd;
+    }
+.cssEditorUI{
+	display: table;
+	width: 100%;
+}
+#cssEditor p{
+	display: table;
+	width: 100%;
+    margin: 0 0 2px;
+}
+#cssEditor p.separator{
+	display: block;
+	width: 100%;
+	padding: 0.5em 0;
+	margin: 0 0 1em -15px;
+	border-bottom: 1px solid #cccccc
+}
+#cssEditor p span{
+	text-align: left;
+	display: table-cell;
+	vertical-align: middle;
+	background-color: inherit;
+	border : none;
+	cursor: inherit;
+	color: #333333;
+	
+}
+#cssEditor p span:first-child{
+	width: 5em;
+}
+#cssEditor p span:last-child,
+#cssEditor p span.help{
+	width: 2em;
+}
+#cssEditor p input[type=text], 
+#cssEditor p select{
+	font-family: 'sertig';
+	vertical-align: middle;
+	width: 100%
+}
+#cssEditor p button{
+	font-size:0.8em;
+	padding: 0;
+	width: 2em;
+	margin: 0;
+}
+#cssEditor p button[role=validate]:before{
+    content: "\e013";
+    font-family: 'Glyphicons Halflings';
+}
+#cssEditor p button.btn-radio{
+	display: none
+}
+/* Cachons la case à cocher */
+#cssEditor [type="radio"]:not(:checked),
+#cssEditor [type="radio"]:checked {
+	display: none
+}
+ 
+/* on prépare le label */
+#cssEditor [type="radio"]:not(:checked) + label,
+#cssEditor [type="radio"]:checked + label {
+	position: relative; /* permet de positionner les pseudo-éléments */
+	cursor: pointer;    /* affiche un curseur adapté */
+	padding: .5em;
+	color: #555555;
+}
+
+#cssEditor [type="radio"]:checked + label{
+	color: #179a1e !important;
+}
+
+#cssEditor .ui_attr{
+	display: none;
+}
+/* COLOR TOOL */
+
+#editor-ui-colorSetter{
+	width: 550px;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+}
+	
+	#editor-ui-colorSetter [role=content] div p{
+		width: 340px;
+		height: 1.2em;
+		background: #cccccc;
+		border: 0.1em solid #888888;
+		border-radius: 1em;
+		text-align: left;
+		margin: 1.2em 2.5em;
+		padding: 0;
+		position: relative;
+		color: #333333;
+	}
+		#editor-ui-colorSetter [role=content]>div p::before{
+			position: absolute;
+			left: -1.5em;
+			top: -.2em;
+			content: '0';
+		}
+		#editor-ui-colorSetter [role=content]>div p::after{
+			position: absolute;
+			right: -2.5em;
+			top: -.2em;
+			content: '255';
+		}
+		#editor-ui-colorSetter [role=content]>div p i{
+			width: 40px;
+			height: 23px;
+			background: #e5e5e5;
+			box-shadow: 0 0 4px #999999;
+			border: 1px solid #888888;
+			border-radius: 10px;
+			margin: 0px;
+			padding-top: 3px;
+			display: inline-block;
+			position: relative;
+			top: -.3em;
+			left: 0;
+			color: #222222;
+			text-align: center;
+			font-style: normal;
+			font-size: .9em;
+			cursor: pointer;
+		}
+		#editor-ui-colorSetter [role=content]>div p[data-color=R]{
+			background: rgba(255,0,0,.2);
+		}
+		#editor-ui-colorSetter [role=content]>div p[data-color=G]{
+			background: rgba(0,255,0,.2);
+		}
+		#editor-ui-colorSetter [role=content]>div p[data-color=B]{
+			background: rgba(0,0,255,.2);
+		}
+		#editor-ui-colorSetter [role=content]>div p[data-color=A] i{
+			left: 300px;
+		}
+		#editor-ui-colorSetter [role=content]>div p[data-color=A]::after{
+			content: '1';
+		}
+		#editor-ui-colorSetter [role=content]>div p[data-color=A]{
+			background: #ffffff
+		}
+			
+		#editor-ui-colorSetter [role=content]>div pre{
+			position: absolute;
+			right: 5px;
+			top: 5px;
+			width: 108px;
+			height: 108px;
+			background: #000000;
+			border-radius: 8px;
+		}
+	#editor-ui-colorFormat[type="checkbox"]:checked + label::after,
+	#editor-ui-colorFormat[type="checkbox"]:not(:checked) + label::after{
+		color: #444444;
+		font-size: .8em;
+		font-family: arial;
+	}	
+	#editor-ui-colorFormat[type="checkbox"]:checked + label::after{
+		content: attr(data-hex);
+		color: #444444;
+	}
+	#editor-ui-colorFormat[type="checkbox"]:not(:checked) + label::after{
+		content: attr(data-rgba);
+	}
+	
+/* attribut masqué par défaut */
+	#cssEditor p.hiddenAttr{
+		display: none;
+	}
+	.

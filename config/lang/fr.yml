@@ -1,0 +1,228 @@
+#Lang : FR
+ewa : "Editeur Web d'Auroran"
+readme : "L'EWA est un éditeur WYSIWYG, c'est-à-dire que ce que vous voyez est ce que vous obtiendrez (suivant les styles CSS que votre site ajoute en plus)."
+default : Par défault
+none: Aucun
+cssEditor :
+	value : Valeur
+	top : Haut
+	right : Droite
+	bottom : Bas
+	left : Gauche
+	class : Classe(s) CSS
+	body : Base de Document
+	stylize : Mise en forme
+	general :
+		title : Général
+		head : Position et style général
+		width : Largeur
+		height : Hauteur
+		display : Type d'affichage
+		displayMenu :
+			inline : Sur la ligne
+			inlineBlock : Bloc ajusté
+			block : Bloc
+			table : Tableau
+			row : Ligne de tableau
+			cell : Cellule de tableau
+		list : Style de Puce
+		listMenu :
+			circle : Cercle
+			disc : Disque
+			square : Carré
+			decimal : Décimal
+			decimalLeadingZero : Décimal à 2 chiffres
+			lowerRoman : Petits chiffres romains
+			upperRoman : Grands chiffres romains
+			lowerAlpha : Petites lettres
+			upperAlpha : Grandes lettres
+			greek : Grec
+			hebrew : Nombres Hébreux
+			armenian : Nombres Arméniens
+			georgian : Nombres Georgiens
+			cjkIdeographic : Nombres idéographiques
+			hiragana : Nombres Hiragana
+			hiraganaIroha : Nombres Hiragana iroha
+			katakana : Nombres Katakana
+			katakanaIroha : Nombres Katakana iroha
+
+		float : Bord de référence
+		left : Décalage Gauche
+		right : Décalage Droite
+		top : Décalage Haut
+		bottom : Décalage Bas
+	background :
+		title : Fond
+		head : Arrière plan
+		color : Couleur
+		size : Taille
+		position : Position
+		repeat : Répétition
+		repeatMenu :
+			enable : activée
+			enableX : activée verticalement
+			enableY : activée horizontalement
+			disable : désactivée
+	content : 
+		title : Contenu
+		head : Textes
+		indentation : Alinéa
+		color : Couleur
+		size : Taille
+		police : Police
+		lineHeight : Hauteur de Ligne
+		style : Style
+		weight : Graisse
+		textAlign : Alignement horizontale
+		verticalAlign : Alignement vertical
+	margin:
+		title : Marges
+		boxSizing : Zone de contenu
+		boxSizingMenu :
+			paddingBox : Délimitée par la marge intérieure
+			borderBox : Délimitée par la bordure
+		padding : Marges intérieures
+		margin : Marges extérieures
+		merge : Unifées
+	border:
+		title : Bordures
+		head : Bordures
+		width : Épaisseur de bordures
+		color : Couleur de bordures
+		style : Type de bordure
+		borderCell : Bordure des cellules
+		styleMenu :
+			solid : Solide
+			dashed : Tirets
+			dotted : Points
+		radius : Arrondis
+
+navigator :
+	head : Choisir un fichier
+	folders : Dossiers
+	files : Fichiers
+	images : Images
+	movies : Vidéos
+	newFolder : Nouveau-Dossier
+	newFile : Nouveau
+
+bubbles : 
+	htmlMode : Afficher le code HTML
+	hideLines : Afficher les traits de construction
+	displayLines : Masquer les traits de construction
+	simpleFormat : Zone de texte simple (Pour la mise en forme)
+	menuElements1 : Élements de sémantiques / mise en forme
+	menuElements2 : Insérer un élément
+	listUL : Insérer une liste
+	listOL : Insérer une liste ordonnée
+	table : Insérer un tableau
+	link : Insérer un lien
+	image : Insérer une image
+	movie : Insérer une vidéo
+	modules : Modules
+
+html :
+	div : Bloc générique
+	article : Section de contenu indépendant
+	section : Section / Découpage sur un sujet
+	nav : Bloc de navigation
+	header : Section d'introduction
+	footer : Section de conclusion 
+	aside  : Bloc d'information
+	pre : Bloc pré-formaté
+	h : Titre de niveau
+	p : Paragraphes
+	span : Zone de texte simple
+	label : Étiquette
+	abbr : Acronyme / Abréviation
+	cite : Citation
+	dfn : Définition
+	code : Code
+	var : Variable mathématique
+	ul : Liste
+	ol : Liste ordonée
+	li : Élements de liste
+	head : 
+		p : Paragraphes
+		h : Titres
+		bloc : Sections et Blocs
+		hf : Sections d'en-tête / pied
+		zone : Zones de texte (Sémantique et mise en forme)
+		list : Listes
+		bootstrap : Lignes / Colones Bootstrap
+		pBootstrap : Paragraphes Bootstrap
+
+htmlText :
+	article : Titre de la section de contenu indépendant
+	section : Titre de la section
+	p : Nouveau paragraphe
+	h : Titre de niveau
+	row : Nouvelle ligne
+	header : Introduction / En-tête
+	footer : Conclusion / pied de section
+	nav : Liens de navigations<br><ul><li>Lien 1</li></ul>
+	aside : "Nouveau block d'information complémentaire"
+	li : Puce
+	caption : Titre du tableau
+	th : Titre Col.
+	td : Cellule
+	default : Texte
+	link : Lien
+
+nodes :
+	image :
+		title : Insérer une image
+		alt : Texte alternatif
+		link : Image entourée d'un lien
+	link : 
+		title : Insérer un lien
+		txt : Texte du lien
+		target : Ouverture dans une nouvelle fenêtre
+	table :
+		title : Insérer un tableau
+		cols : Col.
+		rows : Lignes
+		advised : Recommandé
+		caption : Insérer un titre
+		headers : Insérer une ligne de titres
+		border : Tableau avec bordures
+	newFile :
+		title : "Créer un nouveau fichier ?"
+		info : "Créer un nouveau ficier écrasera l'actuelle édition"
+msg :
+	notCompatible : Votre navigateur n'est pas compatible avec l'EWA
+	notCompatibleInfo : "Un éditeur HTMC/CSS ne peut être efficacement utilisé qu'avec un navigateur moderne, respectant les standars du W3C"
+	error : Erreur
+	errorSave : "L'enregistrement à échoué..."
+
+contextMenu :
+	copy : Copier
+	cut : Couper
+	paste : Coller
+	table : 
+		rows : Lignes
+		cols : Colonnes
+		cells : Cellules
+		insertRowBefore : Insérer une ligne avant
+		insertRowAfter : Insérer une ligne après
+		selectRow : Sélectionner la Ligne
+		deleteCurRow : Supprimer cette ligne
+		insertColBefore : Insérer une colonne avant
+		insertColAfter : Insérer une colonne après
+		deleteCurCol : Supprimer cette colonne
+		mergeLeft : Fusionner avec la cellule de gauche
+		mergeRight : Fusionner avec la cellule de droite
+		mergeDown : Fusionner avec la cellule du bas
+		splitRight : Diviser la cellule vers la droite
+		splitLeft : Diviser la cellule vers la gauche
+		splitDown : Diviser en hauteur
+		selectBody : Sélectionner le corps du tableau
+		selectTable : Sélectionner le tableau
+		createCaption : Insérer un titre
+		enableBorders : Activer les bordures automatiques
+		disableBorders : Désactiver les bordures automatiques
+
+colorTools : 
+	title : "Choisir la couleur"
+	hex : Format Hexadécimal
+	rgba : Format RGBA
